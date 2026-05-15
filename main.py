@@ -15,7 +15,7 @@ from reconstruction import run_two_view, run_incremental
 def main():
     parser = argparse.ArgumentParser(description="Sparse 3D reconstruction project")
     parser.add_argument("--images_dir", type=str, required=True, help="Folder containing overlapping images")
-    parser.add_argument("--out_ply", type=str, default="sparse_cloud.ply", help="Output PLY file")
+    parser.add_argument("--out_ply", type=str, default="results/sparse_cloud.ply", help="Output PLY file (default: results/sparse_cloud.ply)")
     parser.add_argument("--mode", type=str, default="two_view", choices=["two_view", "incremental"])
     args = parser.parse_args()
 

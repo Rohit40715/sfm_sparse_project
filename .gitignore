@@ -32,6 +32,8 @@ wheels/
 
 # Generated files
 *.ply
+results/*.ply
+results/!.gitkeep
 sparse_cloud.ply
 twoviewsparse_colud.ply
 
