@@ -2,7 +2,7 @@
 
 A **Structure-from-Motion (SfM)** system that reconstructs 3D scenes from multiple overlapping photographs using classical computer vision techniques. This project implements a complete sparse 3D reconstruction pipeline with two operational modes: fast two-view reconstruction and comprehensive multi-view incremental reconstruction.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Project Overview](#project-overview)
 - [How It Works](#how-it-works)
 - [Pipeline Architecture](#pipeline-architecture)
@@ -15,7 +15,7 @@ A **Structure-from-Motion (SfM)** system that reconstructs 3D scenes from multip
 
 ---
 
-## 📸 Project Overview
+## Project Overview
 
 **What is Structure-from-Motion?**
 
@@ -40,7 +40,7 @@ Structure-from-Motion (SfM) is a computer vision technique that reconstructs 3D 
 
 ---
 
-## 🎯 How It Works
+## How It Works
 
 ### Two-View Reconstruction (Fast Mode)
 
@@ -99,7 +99,7 @@ PLY Output (Dense Point Cloud)
 
 ---
 
-## 🔧 Pipeline Architecture
+## Pipeline Architecture
 
 ### 1. **Feature Detection** (`features.py`)
 
@@ -188,7 +188,7 @@ E = Σ ||projection(P_i) - observation_2d||²
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -219,7 +219,7 @@ python -c "import cv2, numpy, open3d, scipy; print('All dependencies installed!'
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Basic Commands
 
@@ -266,7 +266,7 @@ python main.py --images_dir ./images --out_ply ./results/my_scene.ply --mode inc
 
 ---
 
-## 📷 Examples
+## Examples
 
 ### Example 1: Two-View Reconstruction
 
@@ -353,7 +353,7 @@ Final Output:
 
 ---
 
-## ⚙️ Parameters & Tuning
+## Parameters & Tuning
 
 ### Feature Extraction
 | Parameter | Location | Default | Effect |
@@ -392,7 +392,7 @@ Final Output:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sfm_sparse_project/
@@ -425,7 +425,7 @@ sfm_sparse_project/
 
 ---
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Camera Model
 
@@ -500,7 +500,7 @@ N = log(1 - confidence) / log(1 - (1 - outlier_ratio)^num_samples)
 
 ---
 
-## 📊 Expected Output
+## Expected Output
 
 ### PLY File Format
 
@@ -561,7 +561,7 @@ Results saved to: results/sparse_cloud.ply
 
 ---
 
-## 🎓 Educational Use
+## Educational Use
 
 This project is designed to be interview-friendly and educational. It demonstrates:
 
@@ -579,7 +579,7 @@ This project is designed to be interview-friendly and educational. It demonstrat
 
 ---
 
-## 🔗 Related Concepts
+## Related Concepts
 
 - **SfM (Structure-from-Motion):** 3D scene reconstruction from images
 - **SLAM (Simultaneous Localization and Mapping):** Real-time SfM variant
@@ -589,19 +589,19 @@ This project is designed to be interview-friendly and educational. It demonstrat
 
 ---
 
-## 📝 License
+## License
 
 This project is provided as-is for educational purposes.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Rohit** - Created as part of computer vision learning
 
 ---
 
-## 📧 Questions & Support
+## Questions & Support
 
 For issues or questions:
 1. Check console output for error messages
