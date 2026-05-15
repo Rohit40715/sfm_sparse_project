@@ -1,5 +1,12 @@
 from __future__ import annotations
 
+import sys
+import os
+from pathlib import Path
+
+# Add src directory to path so modules can be imported
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
+
 import argparse
 
 from reconstruction import run_two_view, run_incremental
