@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated files
+*.ply
+sparse_cloud.ply
+twoviewsparse_colud.ply
+
+# Temporary files
+temp_*.py
+*_temp.py
+
+# Screenshots and environment configs
+*Camera*.json
+*Camera*.txt
+*Screenshot*.png
+*Capture*.png
+ScreenCamera*.json
+ScreenCapture*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+*.out
+*.log

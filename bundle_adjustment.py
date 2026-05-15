@@ -59,10 +59,7 @@ def bundle_adjustment(camera_poses: dict, tracks: list, K: np.ndarray, features:
     camera_indices = np.array(camera_indices, dtype=int)
     point_indices = np.array(point_indices, dtype=int)
     points_2d = np.array(points_2d)
-
-    if len(points_2d) == 0:
-        return camera_poses, tracks
-
+    
     x0 = np.hstack((camera_params.ravel(), points_3d.ravel()))
     
     res = least_squares(ba_objective, x0, verbose=2, x_scale='jac', ftol=1e-4, method='trf',
